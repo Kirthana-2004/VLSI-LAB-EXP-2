@@ -49,8 +49,9 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 VERILOG CODE
+Encoder 8to3:
+~~~
 
-   <<< TYPE YOUR VERILOG CODE >>>
 
 OUTPUT WAVEFORM
  <<< PASTE YOUR OUTPUT WAVEFORM >>>
