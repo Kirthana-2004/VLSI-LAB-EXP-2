@@ -49,12 +49,22 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 VERILOG CODE
+
+
 Encoder 8to3:
 ~~~
+module encoder_8_to_3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+or g1(a0,d1,d3,d5,d7);
+or g2(a1,d2,d3,d6,d7);
+or g3(a2,d4,d5,d6,d7);
+endmodule
+~~~
+OUTPUT:
+![WhatsApp Image 2024-04-23 at 6 50 08 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/833b6baa-41b0-44fc-8bc7-035b6e19b9c0)
 
+![WhatsApp Image 2024-04-23 at 6 50 08 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/4bb7c3e1-5dc6-44be-81fb-5a48f96806f0)
 
-OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
 
 RESULT
 
