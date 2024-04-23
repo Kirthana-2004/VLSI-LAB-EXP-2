@@ -113,6 +113,66 @@ OUTPUT:
 
 ![WhatsApp Image 2024-04-23 at 6 50 09 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/74df8f11-9703-4b33-bd37-ba9bcbaa7751)
 
+Demultiplexer 1to8:
+
+~~~
+module demux_1_8(y,s,a);
+output reg [7:0]y;
+input [2:0]s;
+input a;
+
+always @(*)
+begin 
+y=0;
+case(s)
+3'd0: y[0]=a;
+3'd1: y[1]=a;
+3'd2: y[2]=a;
+3'd3: y[3]=a;
+3'd4: y[4]=a;
+3'd5: y[5]=a;
+3'd6: y[6]=a;
+3'd7: y[7]=a;
+endcase
+end
+endmodule
+~~~
+OUTPUT:
+![WhatsApp Image 2024-04-23 at 6 50 09 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/bef98284-cdbd-4c09-bb8d-61ba5396a467)
+![WhatsApp Image 2024-04-23 at 6 50 09 PM (2)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/e751b980-b1a3-43f0-ac4a-6b8ed49f8e21)
+
+Magnitudecomparator:
+~~~
+module comparator(a,b,eq,lt,gt);
+input [3:0] a,b;
+output reg eq,lt,gt;
+always @(a,b)
+begin
+ if (a==b)
+ begin
+  eq = 1'b1;
+  lt = 1'b0;
+  gt = 1'b0;
+ end
+ else if (a>b)
+begin
+  eq = 1'b0;
+  lt = 1'b0;
+  gt = 1'b1;
+ end
+ else
+ begin
+  eq = 1'b0;
+  lt = 1'b1;
+  gt = 1'b0;
+ end
+end 
+endmodule
+~~~
+OUTPUT:
+![WhatsApp Image 2024-04-23 at 6 50 10 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/49ceb93e-8860-4596-a145-16bf3987cc1c)
+![WhatsApp Image 2024-04-23 at 6 50 10 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/623e02c5-2f9f-4c9f-84cc-7ed5aa80054d)
+
 RESULT
 
 
