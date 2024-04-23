@@ -65,6 +65,53 @@ OUTPUT:
 
 ![WhatsApp Image 2024-04-23 at 6 50 08 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/4bb7c3e1-5dc6-44be-81fb-5a48f96806f0)
 
+Decoder 3to8:
+
+~~~
+module decoder_3to8(
+    input [2:0] a,
+    output [7:0] d );
+assign d[0]=(~a[2])&(~a[1])&(~a[0]);
+assign d[1]=(~a[2])&(~a[1])&(a[0]);
+assign d[2]=(~a[2])&(a[1])&(~a[0]);
+assign d[3]=(~a[2])&(a[1])&(a[0]);
+assign d[4]=(a[2])&(~a[1])&(~a[0]);
+assign d[5]=(a[2])&(~a[1])&(a[0]);
+assign d[6]=(a[2])&(a[1])&(~a[0]);
+assign d[7]=(a[2])&(a[1])&(a[0]);
+endmodule
+~~~
+OUTPUT:
+
+
+
+
+
+Multiplexer 8to1:
+~~~
+module mux_8to1(in,sel,out);
+  input[7:0]in;
+  output reg out;
+  always @(*)
+    begin
+      case(sel)
+        3'b000: out = in[0];
+        3'b001: out = in[1];
+        3'b010: out = in[2];
+        3'b011: out = in[3];
+        3'b100: out = in[4];
+        3'b101: out = in[5];
+        3'b110: out = in[6];
+        3'b111: out = in[7];
+        default: out = 1'bx;
+      endcase
+    end
+endmodule
+~~~
+OUTPUT:
+![WhatsApp Image 2024-04-23 at 6 50 08 PM (2)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/3bfc3d5d-5daf-41cf-9950-7171fe8d0cff)
+
+![WhatsApp Image 2024-04-23 at 6 50 09 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/74df8f11-9703-4b33-bd37-ba9bcbaa7751)
 
 RESULT
 
