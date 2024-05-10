@@ -82,10 +82,8 @@ assign d[7]=(a[2])&(a[1])&(a[0]);
 endmodule
 ~~~
 OUTPUT:
-
-
-
-
+![image](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/47c9326c-3119-4d4b-b67d-98718b2805fe)
+![image](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/a6a2fbd0-0af9-4766-8003-c065071727f7)
 
 Multiplexer 8to1:
 ~~~
