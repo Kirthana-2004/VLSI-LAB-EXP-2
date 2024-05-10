@@ -171,6 +171,7 @@ OUTPUT:
 ![WhatsApp Image 2024-04-23 at 6 50 10 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/49ceb93e-8860-4596-a145-16bf3987cc1c)
 ![WhatsApp Image 2024-04-23 at 6 50 10 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-2/assets/144320880/623e02c5-2f9f-4c9f-84cc-7ed5aa80054d)
 
-RESULT
+RESULT:
+Thus the simulation and synthesis of ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Xilinx ISE has been successfully executed and verified. 
 
 
